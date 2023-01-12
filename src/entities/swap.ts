@@ -6,7 +6,7 @@ export class SwapRequest {
 	public userPublicKey: string
 	public priorityFee: number
 
-	constructor({route, userPublicKey, priorityFee}) {
+	constructor(route: Route, userPublicKey: string, priorityFee: number) {
 		this.route = route
 		this.userPublicKey = userPublicKey
 		this.priorityFee = priorityFee
