@@ -1,6 +1,6 @@
 {
   "name": "@alphabatem/nft-amm-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "AlphaBatem Labs",
   "license": "MIT",
   "exports": {
@@ -60,9 +60,9 @@
   },
   "description": "This SDK Allows you to interface with the AlphaBatem NFT Aggregator to provide your users the best price to instantly sell any NFT in any token.",
   "bugs": {
-    "url": "https://github.com/snyk-labs/modern-npm-package/issues"
+    "url": "https://alphabatem.com"
   },
-  "homepage": "https://github.com/snyk-labs/modern-npm-package#readme",
+  "homepage": "https://nft-agg.alphabatem.com",
   "directories": {
     "lib": "lib"
   },
