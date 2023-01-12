@@ -1,6 +1,6 @@
 {
   "name": "@alphabatem/nft-amm-sdk",
-  "version": "1.0.1",
+  "version": "1.0.11",
   "author": "AlphaBatem Labs",
   "license": "MIT",
   "exports": {
@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/snyk-labs/modern-npm-package.git"
+    "url": "git+https://github.com/alphabatem/nft-amm-sdk.git"
   },
   "keywords": [
     "npm",
@@ -50,9 +50,9 @@
     "nodejs",
     "commonjs",
     "ecmascript",
-    "beginner",
-    "example",
-    "demonstration"
+    "sdk",
+    "aggregator",
+    "nft"
   ],
   "devDependencies": {
     "ts-node": "^10.9.1",
