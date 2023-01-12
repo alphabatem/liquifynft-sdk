@@ -15,14 +15,14 @@ export class QuoteRequest {
 
 	public readonly userPublicKey: string
 
-	constructor(props : any) {
-		this.id = props.id
-		this.inputMint = props.inputMint
-		this.outputMint = props.outputMint
-		this.swapMode = props.swapMode
-		this.slippage = props.slippage
-		this.referralFee = props.referralFee
-		this.userPublicKey = props.userPublicKey
+	constructor({id, inputMint, outputMint, swapMode, slippage, referralFee, userPublicKey}) {
+		this.id = id
+		this.inputMint = inputMint
+		this.outputMint = outputMint
+		this.swapMode = swapMode
+		this.slippage = slippage
+		this.referralFee = referralFee
+		this.userPublicKey = userPublicKey
 	}
 }
 
@@ -32,8 +32,8 @@ export class QuoteResponse {
 
 	public readonly slot: number
 
-	constructor(props : any) {
-		this.routes = props.route
-		this.slot = props.slot
+	constructor({routes, slot}) {
+		this.routes = routes
+		this.slot = slot
 	}
 }

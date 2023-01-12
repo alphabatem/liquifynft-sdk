@@ -6,17 +6,17 @@ export class SwapRequest {
 	public userPublicKey: string
 	public priorityFee: number
 
-	constructor(props : any) {
-		this.route = props.route
-		this.userPublicKey = props.userPublicKey
-		this.priorityFee = props.priorityFee
+	constructor({route, userPublicKey, priorityFee}) {
+		this.route = route
+		this.userPublicKey = userPublicKey
+		this.priorityFee = priorityFee
 	}
 }
 
 export class SwapResponse {
 	public readonly transaction: string
 
-	constructor(props : any) {
-		this.transaction = props.transaction
+	constructor(txn: string) {
+		this.transaction = txn
 	}
 }
