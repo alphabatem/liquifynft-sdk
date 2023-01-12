@@ -1,3 +1,5 @@
+let defaultURI = "https://agg.alphabatem.com/v1"
+
 export async function getApi(uri: string) {
 	const resp = await fetch(fullUri(uri))
 	return resp.json()
@@ -20,5 +22,9 @@ export function fullUri(path: string): string {
 }
 
 export function baseURI(): string {
-	return "https://agg.alphabatem.com/v1"
+	return defaultURI
+}
+
+export function setBaseURI(base: string) {
+	defaultURI = base
 }
