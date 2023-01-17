@@ -14,9 +14,10 @@ export class SwapRequest {
 }
 
 export class SwapResponse {
-	public readonly transaction: string
+	public readonly transactions: string[]
 
-	constructor(txn: string) {
-		this.transaction = txn
+
+	constructor(txns: string[]) {
+		this.transactions = txns
 	}
 }
