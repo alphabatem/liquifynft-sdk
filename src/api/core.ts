@@ -1,4 +1,4 @@
-let defaultURI = "https://agg.alphabatem.com/v1"
+let defaultURI = "https://api.liquifynft.com/v1"
 
 export async function getApi(uri: string) {
 	const resp = await fetch(fullUri(uri))
