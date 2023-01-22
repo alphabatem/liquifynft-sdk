@@ -1,6 +1,6 @@
-# NFT AMM SDK
+# LiquifyNFT SDK
 
-This SDK Allows you to interface with the AlphaBatem NFT Aggregator to provide your users the best price to instantly sell any NFT in any token.
+This SDK Allows you to interface with the LiquifyNFT NFT Aggregator to provide your users the best price to instantly sell any NFT in any token.
 
 ## API Reference
 
