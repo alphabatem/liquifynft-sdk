@@ -14,7 +14,6 @@ export class CollectionResponse {
 		this.firstCreator = props.firstCreator
 		this.addedBy = props.addedBy
 	}
-
 }
 
 export class CollectionMarket {
