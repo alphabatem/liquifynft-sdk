@@ -14,17 +14,33 @@ export class SwapRequest {
 }
 
 export class SwapResponse {
-	public readonly transactions: string[]
+	public readonly setupTransactions: string[]
+	public readonly cleanupTransactions: string[]
+	public readonly swapTransactions: string[]
 
 
 	constructor(txns: string[]) {
-		this.transactions = txns
+		this.cleanupTransactions = txns
+		this.swapTransactions = txns
+		this.setupTransactions = txns
 	}
 
-	toTransactions(): VersionedTransaction[] {
+	toSetupTransactions(): VersionedTransaction[] {
+		return this._toTransactions(this.setupTransactions)
+	}
+
+	toSwapTransactions(): VersionedTransaction[] {
+		return this._toTransactions(this.swapTransactions)
+	}
+
+	toCleanupTransactions(): VersionedTransaction[] {
+		return this._toTransactions(this.cleanupTransactions)
+	}
+
+	_toTransactions(tx: string[]): VersionedTransaction[] {
 		const txns = []
-		for (let i = 0; i < this.transactions.length; i++) {
-			const txn = VersionedTransaction.deserialize(Buffer.from(this.transactions[i], "base64"))
+		for (let i = 0; i < tx.length; i++) {
+			const txn = VersionedTransaction.deserialize(Buffer.from(tx[i], "base64"))
 			txns.push(txn)
 		}
 		return txns
