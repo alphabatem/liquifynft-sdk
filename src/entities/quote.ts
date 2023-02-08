@@ -13,7 +13,7 @@ export class QuoteRequest {
 
 	public readonly referralFee: number
 
-	public readonly referralFeeTarget: string
+	public readonly referralFeeTarget?: string
 
 	public readonly userPublicKey: string
 
@@ -23,9 +23,10 @@ export class QuoteRequest {
 		this.outputMint = outputMint
 		this.swapMode = swapMode
 		this.slippage = slippage
-		this.referralFee = referralFee
-		this.referralFeeTarget = referralFeeTarget
 		this.userPublicKey = userPublicKey
+		this.referralFee = referralFee
+		if (referralFeeTarget !== "")
+			this.referralFeeTarget = referralFeeTarget
 	}
 }
 
